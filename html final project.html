@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Omo-Omo 🍜</title>
+        <style>
+            nav{
+                background-color: aqua;
+                margin-left: 0%;
+                margin-right: 73%;
+            }
+                hr{
+                    width: 45%;
+                    color: rgb(58, 39, 16);
+                }
+            h1{
+                color: rgb(58, 39, 16);
+                font-weight: bold;
+            }
+            h2{
+                color: blueviolet;
+            }
+            footer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+                background-color: #fff7af;
+                color: rgb(61, 60, 49);
+                width: 100%;
+                height: 20px;
+                bottom: 0;
+            }
+        </style>
+    </head>
+
+    <!--Header and menu navigation-->
+    <body>
+        <header>
+            <h1>OMO-OMO</h1>
+            <img src="https://i.pinimg.com/564x/9b/50/bb/9b50bb4f9b360827384a90673524bc3b.jpg" alt="Ramyeon Boyz restaurant logo" id="header-img" width="400">
+            <nav>
+                <ul>
+                   <li><h3><a href="#Menu">Menu</a></h3></li>
+                    <li><h3><a href="#place-order">Place Your Order</a></h3></li>
+                </ul>
+            </nav>
+        </header>
+    <!--Two sections: Menu and Form for placing order-->
+        <main>
+            <section>
+                <h2 id="Menu">Menu</h2>
+                <img src="https://i.pinimg.com/564x/2a/11/58/2a115820ef6c8ed82c8aa7d47b65d40b.jpg" alt="cat in ramen bowl" width="200">
+                <article>
+                    <h3>Kimchi jjigae</h3>
+                    <img src="https://i.pinimg.com/736x/ee/c6/00/eec600bb22f513b41e3338320394f461.jpg" alt="Kimchi jjigae" width="200">
+                    <p>
+                        Kimchi Jjigae is a spicy Korean stew of pork belly, tofu, and Korean fermented napa cabbage simmered in a delicate anchovy broth.
+                        <br>
+                        <i>$5.00</i>
+                    </p><hr/>
+                </article>
+                <article>
+                    <h3>Bibimbap</h3>
+                    <img src="https://i.pinimg.com/564x/09/68/d2/0968d29503f5cce218ac512c6440bce0.jpg" alt="Bibimbap" width="200">
+                    <p>
+                        This beloved Korean bowl incorporates steamed white rice with assorted fresh, marinated, and sautéed vegetables along with raw or seared meat.
+                        <br>
+                        <i>$5.00</i>
+                    </p><hr/>
+                </article>
+                <article>
+                    <h3>Bulgogi</h3>
+                    <img src="https://i.pinimg.com/564x/08/3f/8f/083f8fe94b114d8593a65eea91b5ba39.jpg" alt="Bulgogi" width="200">
+                    <p>
+                        Thinly sliced grilled steak that has been marinated in a sweet soy, sesame, and garlic sauce.
+                        <br>
+                        <i>$6.00</i>
+                    </p><hr>
+                </article>
+            </section>
+            <section>
+                <h2 id="place-order">Place your order</h2>
+                <img src="https://i.pinimg.com/564x/b7/5b/74/b75b74d942a996d8c1880665d942f4bd.jpg" alt="girl calling for food" width="200">
+                <form>
+                    <b>Kimchi jjigae</b><br>
+                    <i>Number of dishes you wish to order</i>
+                    <input type="number" min="0" required><br>
+                    Would you like some extras? <i><b>Each extra adds +$1.00</b></i><br>
+                    <input type="checkbox" name="extras-jjigae"> Sesame seeds
+                    <input type="checkbox" name="extras-jjigae"> +1 fried Egg
+                    <input type="checkbox" name="extras-jjigae"> Mozzarella cheese
+                    <input type="checkbox" name="extras-jjigae"> Steamed rice
+                    <br><br>
+                    <b>Bibimbap</b><br>
+                    <i>Number of dishes you wish to order</i>
+                    <input type="number" min="0" required><br>
+                    Would you like some extras? <i><b>Each extra adds +$1.00</b></i><br>
+                    <input type="checkbox" name="extras-bibimbap"> Sesame seeds
+                    <input type="checkbox" name="extras-bibimbap"> +1 fried Egg
+                    <input type="checkbox" name="extras-bibimbap"> Mozzarella cheese
+                    <input type="checkbox" name="extras-bibimbap"> Steamed rice
+                    <input type="checkbox" name="extras-bibimbap"> Kimchi
+                    <br><br>
+                    <b>Bulgogi</b><br>
+                    <i>Number of dishes you wish to order</i>
+                    <input type="number" min="0" required><br>
+                    Would you like some extras? <i><b>Each extra adds +$1.00</b></i><br>
+                    <input type="checkbox" name="extras-bulgogi"> Sesame seeds
+                    <input type="checkbox" name="extras-bulgogi"> +1 fried Egg
+                    <input type="checkbox" name="extras-bulgogi"> Mozzarella cheese
+                    <input type="checkbox" name="extras-bulgogi"> Steamed rice
+                    <input type="checkbox" name="extras-bulgogi"> Kimchi
+                    <br><br>
+                    Any alergies or special request? aka. Special message for a gift<br>
+                    <textarea id="special-order" rows="5" cols="60" placeholder="Enter your special request here"></textarea><br>
+                    <br><br>
+                    <h4><i>Any tip is truly apreciated, thanks!</i></h4>
+                    <input type="radio" name="tip">0%
+                    <input type="radio" name="tip">10%
+                    <input type="radio" name="tip">15%
+                    <input type="radio" name="tip">20%
+                    <br><br>
+                    <input type="submit" value="Go To Checkout">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p><i>Made with love by @NaaraR 💕</i></p>
+        </footer>
+    </body>
+</html>
